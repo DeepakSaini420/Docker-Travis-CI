@@ -7,11 +7,3 @@ before_install:
 
 script: 
   - docker run legendsaini/docker-react npm run test -- --coverage
-
-deploy:
-  provider: "elastic-beanstalk"
-  region: "us-east-1a"
-  app: "docker"
-  env: "Docker-env"
-  on:
-    branch: master
